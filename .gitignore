@@ -1,0 +1,35 @@
+# Python environments and generated caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local datasets and generated arrays
+processed_dataset/
+processsed_test/
+processed_test/
+test_parq13/
+*.npy
+*.npz
+*.parquet
+
+# Model checkpoints and training outputs
+runs/
+training_results/
+test_results/
+*.pt
+*.pth
+*.gv
+
+# Generated figures and exported documents
+*.png
+*.pdf
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/

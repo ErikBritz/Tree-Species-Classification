@@ -1,0 +1,5 @@
+-r requirements.txt
+dataframe-image>=0.2
+seaborn>=0.13
+torchviz>=0.0.3
+visualtorch>=0.2
