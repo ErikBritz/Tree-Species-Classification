@@ -1,13 +1,11 @@
 # CNN + Metadata for Tree-Species Classification
 
-A PyTorch project for classifying tree species from multispectral satellite
-patches and seasonal/topographic metadata. The image branch is a compact CNN;
-an MLP encodes metadata, and the two feature vectors are fused for
-classification.
+A PyTorch project for TUM’s Data Science for Earth Observation course that combines a compact CNN and an MLP to classify tree species using multispectral satellite imagery and contextual metadata. Sentinel-2 patches were downloaded from GEE and prepared before being fed to the model. 
 
 ## What this project demonstrates
 
 - Multispectral patch loading and memory-mapped NumPy arrays
+- Learning which channels/information was useful for the model
 - Train-only per-band normalization and stratified train/validation/test splits
 - Class-weighted loss and optional weighted sampling for imbalanced classes
 - Optional spatial/noise augmentation
@@ -91,7 +89,7 @@ The local `test_results/test_report.txt` records a macro-F1 of **0.1150** and
 accuracy of **0.1784** over 16,583 examples. The original evaluation procedure
 is not fully captured in the current scripts, so treat these as historical
 results rather than a directly reproducible benchmark. The low scores also
-highlight the difficulty of generalizing across imbalanced species classes.
+highlight the difficulty of generalizing across imbalanced species classes, limited time, and unseen data.
 
 ## Repository contents
 
